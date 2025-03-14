@@ -39,6 +39,4 @@ app.get("/v1/api/:mangaId/:chapterId/:imageId", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server berjalan di http://localhost:${PORT}`);
-});
+module.exports = app
