@@ -39,4 +39,4 @@ app.get("/v1/api/:mangaId/:chapterId/:imageId", async (req, res) => {
   }
 });
 
-module.exports = app
+export default app
