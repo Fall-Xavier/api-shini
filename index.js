@@ -32,6 +32,7 @@ app.get("/v1/api/:mangaId/:chapterId/:imageId", async (req, res) => {
 
     const blob = await response.blob();
     res.set("Content-Type", blob.type);
+    console.log(Buffer.from(await blob.arrayBuffer()));
     res.send(Buffer.from(await blob.arrayBuffer()));
   } catch (error) {
     console.error(error);
